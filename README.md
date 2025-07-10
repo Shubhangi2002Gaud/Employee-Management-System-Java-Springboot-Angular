@@ -1,27 +1,61 @@
-# AngularFrontend
+# Employee Management System 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+A full-stack **Employee Management System** built using **Java + Spring Boot (backend)** and **Angular (frontend)**. It provides CRUD functionality for managing employees in an organization.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Tech Stack
 
-## Code scaffolding
+- **Frontend**: Angular 16, TypeScript, HTML5, SCSS/Bootstrap
+- **Backend**: Spring Boot 3.x, Spring MVC, Spring Data JPA
+- **Database**: MySQL 
+- **Build Tools**: Maven (backend), Angular CLI (frontend)
+- **API Communication**: RESTful APIs with JSON
+- **Deployment**: Docker (Optional), Localhost
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+##  Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+✅ Add New Employees  
+✅ View All Employees  
+✅ Update Employee Details  
+✅ Delete Employees  
+✅ Search Employees by Name or Email  
+✅ Responsive UI with Angular Material or Bootstrap  
+✅ CORS Enabled API for frontend-backend integration
 
-## Running unit tests
+---
+## Installation & Run Locally
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+###  Backend (Spring Boot)
 
-## Running end-to-end tests
+```bash
+cd backend
+#Update src/main/resources/application.properties with your DB credentials
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Run using Maven
+./mvnw spring-boot:run
 
-## Further help
+ ### Frontend
+cd frontend
+npm install
+ng serve
+Access Angular app at http://localhost:4200
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+----
+| Method | Endpoint              | Description        |
+| ------ | --------------------- | ------------------ |
+| GET    | `/api/employees`      | List all employees |
+| POST   | `/api/employees`      | Add new employee   |
+| PUT    | `/api/employees/{id}` | Update employee    |
+| DELETE | `/api/employees/{id}` | Delete employee    |
+
+
+
+
+
+
+
+
+
